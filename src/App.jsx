@@ -4,15 +4,17 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import SigIn from "./pages/SigIn";
 import SignUp from "./pages/SignUp";
+import Header from "./components/Header";
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="sing-in" element={<SigIn />} />
+        <Route path="sign-in" element={<SigIn />} />
         <Route path="sing-up" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
